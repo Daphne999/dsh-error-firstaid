@@ -1,0 +1,54 @@
+{
+  "name": "dsh-firstaid",
+  "version": "0.1.0",
+  "description": "First aid for DeepSeek Harness errors: paste the error text and get the most likely cause plus one concrete step to try, from a curated deterministic rule table. No model call, no machine scanning, and an explicit \"I don't know\" when nothing matches. | 报错急救：粘贴报错原文，给出最可能的原因和一步能做的修复；规则表纯本地确定性匹配，不调模型、不扫机器，匹配不到就老实说不知道。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "troubleshooting",
+    "error",
+    "diagnose",
+    "first-aid",
+    "startup",
+    "offline"
+  ],
+  "license": "MIT",
+  "author": "Daphne999",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daphne999/dsh-firstaid.git"
+  },
+  "homepage": "https://github.com/Daphne999/dsh-firstaid#readme",
+  "engines": {
+    "node": ">=22.15"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none test/*.test.mjs",
+    "smoke": "node test/smoke.mjs",
+    "check": "node --check lib/index.js"
+  }
+}

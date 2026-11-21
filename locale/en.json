@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "First Aid",
+    "description": "Paste an error and get the most likely cause plus one concrete step to try, from a curated deterministic rule table. No model call, no machine scanning, and an explicit I-do-not-know when nothing matches."
+  }
+}

@@ -1,0 +1,7 @@
+# dsh-firstaid bundle patch: inserts the plugin row into the profile roster.
+# The package is Host-only: it registers two agent tools and reads nothing but
+# the error text you paste. Activate with
+# `dsh plugin --profile <name> add link:<path-to-this-package>`.
+- insert:
+    - id: dsh-firstaid
+      name: dsh-firstaid
