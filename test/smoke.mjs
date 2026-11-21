@@ -59,6 +59,8 @@ const CASES = [
   ['/usr/bin/bash: line 1: Select-Object: command not found', 'shell-dialect-mismatch'],
   ['Error: Error: rejected checks — check-1: title is required (what must be true, in one line)', 'claimcheck-check-title-missing'],
   ['Error: Error: version_conflict: stale version 3 (current 4); re-read the task and retry once', 'taskboard-version-conflict'],
+  ['Error: cannot read "D:\\x\\a.jpg": the .jpg extension declares image/jpeg, but the bytes use a different image format; rename the file to match its actual format if it is PNG/JPEG/WebP/GIF', 'image-extension-mismatch'],
+  ['Error: old_string was not found in "D:\\x\\a.txt"', 'edit-old-string-missing'],
 ];
 
 for (const [text, want] of CASES) {

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — 2026-11-21（晚）
+
+维护版，规则 32 → 34，新增两条当天真实复现的错误：
+
+- `image-extension-mismatch`：PNG/WebP 被存成 `.jpg` 时读图被拒（`the .jpg extension declares image/jpeg, but the bytes use a different image format`）。本机 24h 日志 7 次 / 2 会话；用「PNG 存成 .jpg」复现并验证改扩展名后可读。
+- `edit-old-string-missing`：`old_string was not found`（读到旧版本 / 空白不一致 / 片段不唯一）。本机复现；24h 日志 5 次。
+
+验证：`node --test` 5/5；smoke 5 组断言、35 段真实报错；隔离 profile 启动无激活错误。已发布 tag `v0.1.1` + Release。
+
 ## 0.1.0 — 2026-11-21
 
 首个公开发布版。命名经过两次查重：内部代号 `dsh-why` 在 npm 已被另一件包占用；`dsh-firstaid` 在 npm 空闲但 GitHub 上已有同名急救类仓库，最终改用 `dsh-error-firstaid`（npm 与 GitHub 搜索均无占用）。
