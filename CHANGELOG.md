@@ -2,7 +2,7 @@
 
 ## 0.1.0 — 2026-11-21
 
-首个公开发布版（仓库名 `dsh-firstaid`，原名内部代号 `dsh-why`——npm 上已有同名的另一件包，故更名发布）。
+首个公开发布版。命名经过两次查重：内部代号 `dsh-why` 在 npm 已被另一件包占用；`dsh-firstaid` 在 npm 空闲但 GitHub 上已有同名急救类仓库，最终改用 `dsh-error-firstaid`（npm 与 GitHub 搜索均无占用）。
 
 - 32 条规则：起动 / 安装 / 插件开发 / 运行 / 网络 / 使用 六个阶段
 - 两个工具：`firstaid_error`（贴报错给解法）、`firstaid_list`（列出覆盖范围）

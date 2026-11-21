@@ -1,8 +1,8 @@
-# dsh-firstaid · 报错急救
+# dsh-error-firstaid · 报错急救
 
 > 贴一段报错，说出最可能的原因和**一步能做的事**。匹配不到就说不知道。
 
-`dsh-firstaid` 是 DeepSeek Harness（DSH）的 Host-only 插件：一张确定性的「症状 → 原因 → 一步修复」规则表，加一个打分匹配器。不调模型、不扫机器、不联网，纯本地毫秒级返回。
+`dsh-error-firstaid` 是 DeepSeek Harness（DSH）的 Host-only 插件：一张确定性的「症状 → 原因 → 一步修复」规则表，加一个打分匹配器。不调模型、不扫机器、不联网，纯本地毫秒级返回。
 
 ---
 
@@ -16,7 +16,7 @@
 
 **三步上手**
 
-1. `dsh plugin --profile desktop add https://github.com/Daphne999/dsh-firstaid`，重启一次 DSH（bundle 插件首次要重启）
+1. `dsh plugin --profile desktop add https://github.com/Daphne999/dsh-error-firstaid`，重启一次 DSH（bundle 插件首次要重启）
 2. 出问题时把报错原文丢给它：`firstaid_error("你的报错原文")`
 3. 想知道它认得哪些？`firstaid_list()`
 

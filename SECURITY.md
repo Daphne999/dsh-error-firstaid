@@ -1,6 +1,6 @@
 # Security
 
-`dsh-firstaid` is a read-only knowledge plugin. The only input is the text you
+`dsh-error-firstaid` is a read-only knowledge plugin. The only input is the text you
 paste into `firstaid_error` / `firstaid_list`.
 
 ## What the plugin touches
@@ -24,5 +24,5 @@ fragments, not user-controlled constructs.
 
 ## Reporting
 
-Open an issue at https://github.com/Daphne999/dsh-firstaid/issues with the rule
+Open an issue at https://github.com/Daphne999/dsh-error-firstaid/issues with the rule
 id and the text you pasted (redact secrets first).
